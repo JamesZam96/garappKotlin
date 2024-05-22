@@ -1,6 +1,7 @@
 package com.example.garapp
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,6 +22,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }*/
         val fLogin = FragmentLogin()
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_login, fLogin).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_main_container, fLogin).commit()
     }
 }

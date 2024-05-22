@@ -43,7 +43,7 @@
            >
 
            <TextView
-               android:id="@+id/Escanea_la_parte_frontal"
+               android:id="@+id/Licencia_de_conduccion"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="Cedula ciudadania"
@@ -53,10 +53,35 @@
                 />
        </GridLayout>
 
+        <TextView
+            android:id="@+id/Escanea_la_parte_frontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Escanea la parte frontal"
+            android:textColor="@color/colorUno"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/Licencia_de_conduccion_frontal"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@id/Licencia_de_conduccion_frontal"
+            tools:layout_editor_absoluteY="498dp" />
 
-
-
-
+        <Button
+            android:id="@+id/continue_verification_code"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FA3D3B"
+            android:text="Continuar"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:icon="@drawable/baseline_arrow_forward_ios_24"
+            app:iconGravity="end"
+            app:iconSize="20dp"
+            app:iconTint="#FFFFFF"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="602dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
