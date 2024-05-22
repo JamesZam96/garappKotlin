@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tipo_de_documento"
+    android:background="@color/colorTres">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tipo_de_documento">
+
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea tu cuenta"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/tipo_de_documento"
+            app:layout_constraintStart_toStartOf="@id/tipo_de_documento"
+            app:layout_constraintEnd_toEndOf="@id/tipo_de_documento"
+            android:layout_marginTop="30dp"
+           />
+
+        <TextView
+            android:id="@+id/Confirmar_tus_datos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar tus datos"
+            android:textColor="@color/colorUno"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tipo_de_documento"
+            app:layout_constraintEnd_toEndOf="@id/tipo_de_documento"
+            app:layout_constraintTop_toBottomOf="@id/create_account"
+            android:layout_marginTop="30dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:hint="Código de verificación"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/tipo_de_documento"
+            app:layout_constraintStart_toStartOf="@id/tipo_de_documento"
+            app:layout_constraintTop_toBottomOf="@id/Confirmar_tus_datos">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/Cedula_ciudadania"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FA3D3B"
+            android:text="Cedula ciudadania "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="249dp"
+            app:layout_constraintEnd_toEndOf="@id/tipo_de_documento"
+            app:layout_constraintStart_toStartOf="@id/tipo_de_documento"
+            app:layout_constraintTop_toBottomOf="@id/Confirmar_tus_datos"
+            android:layout_marginTop="70dp"
+            />
+        <Button
+            android:id="@+id/Cedula_extranjeria"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FA3D3B"
+            android:text="Cedula extranjeria"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/tipo_de_documento"
+            app:layout_constraintStart_toStartOf="@id/tipo_de_documento"
+            app:layout_constraintTop_toBottomOf="@id/Cedula_ciudadania"
+            android:layout_marginTop="70dp" />
+
+        <Button
+            android:id="@+id/Permiso_de_permanencia"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FA3D3B"
+            android:text="Permiso de permanencia "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/tipo_de_documento"
+            app:layout_constraintStart_toStartOf="@id/tipo_de_documento"
+            app:layout_constraintTop_toBottomOf="@id/Cedula_extranjeria"
+            android:layout_marginTop="70dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:accessibilityLiveRegion="assertive"
+    android:background="@color/colorTres"
+    tools:context=".Licencia_de_conduccion_frontal">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Licencia_de_conduccion_frontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Crea tu cuenta"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/Licencia_de_conduccion_frontal"
+            app:layout_constraintStart_toStartOf="@id/Licencia_de_conduccion_frontal"
+            app:layout_constraintTop_toTopOf="@id/Licencia_de_conduccion_frontal" />
+
+
+       <GridLayout
+           android:layout_marginTop="40dp"
+           android:layout_width="300dp"
+           android:layout_height="40dp"
+           app:layout_constraintStart_toStartOf="@id/Licencia_de_conduccion_frontal"
+           app:layout_constraintEnd_toEndOf="@id/Licencia_de_conduccion_frontal"
+           app:layout_constraintTop_toBottomOf="@id/create_account"
+           android:rowCount="1"
+           android:columnCount="1"
+           android:background="#597E7474"
+
+           >
+
+           <TextView
+               android:id="@+id/Escanea_la_parte_frontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Cedula ciudadania"
+               android:textColor="@color/white"
+               android:textSize="24dp"
+               android:layout_gravity="center"
+                />
+       </GridLayout>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
