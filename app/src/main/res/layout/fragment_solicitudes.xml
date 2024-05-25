@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="preguntas_frecuentes_conectado"
+    tools:context=".solicitudes"
     android:background="#C1C1C1">
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -18,29 +19,29 @@
     </ImageView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layout_two"
+        android:id="@+id/layout"
         android:layout_width="match_parent"
-        android:layout_height="666dp">
+        android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/frequentquestions"
+            android:id="@+id/requests"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Preguntas frecuentes"
             android:textColor="@color/black"
             android:textSize="30dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@id/layout_two"
-            app:layout_constraintStart_toStartOf="@id/layout_two"
-            app:layout_constraintTop_toTopOf="@id/layout_two" />
+            app:layout_constraintEnd_toEndOf="@+id/layout"
+            app:layout_constraintStart_toStartOf="@id/layout"
+            app:layout_constraintTop_toTopOf="@id/layout"
+            android:text="Solicitudes" />
 
         <Button
-            android:id="@+id/question1"
+            android:id="@+id/updateinformation"
             android:layout_width="260dp"
             android:layout_height="45dp"
+            android:text="Actializar informacion"
             android:layout_marginTop="90dp"
-            android:text="Pregunta 1"
             android:textStyle="bold"
             android:textSize="15sp"
             app:cornerRadius="5sp"
@@ -48,123 +49,133 @@
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frequentquestions" />
+            app:layout_constraintTop_toBottomOf="@+id/requests" />
 
         <Button
-            android:id="@+id/question2"
+            android:id="@+id/registeranothervehicle"
             android:layout_width="260dp"
             android:layout_height="45dp"
+            android:text="Resgistrar otro vehiculo"
             android:layout_marginTop="10dp"
-            android:text="pregunta 2"
             android:textStyle="bold"
             android:textSize="15sp"
             app:cornerRadius="5sp"
+            android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/question1" />
+            app:layout_constraintTop_toBottomOf="@+id/updateinformation" />
 
         <Button
-            android:id="@+id/question3"
+            android:id="@+id/reportaproblem"
             android:layout_width="260dp"
             android:layout_height="45dp"
+            android:text="Reportar un problema"
             android:layout_marginTop="10dp"
-            android:text="Pregunta 3"
-            android:textSize="15sp"
             android:textStyle="bold"
+            android:textSize="15sp"
             app:cornerRadius="5sp"
+            android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/question2"/>
-
-        <Button
-            android:id="@+id/question4"
-            android:text="pregunta 4"
-            android:layout_width="260dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:cornerRadius="5sp"
-            android:backgroundTint="#FA3D3B"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/question3"
+            app:layout_constraintTop_toBottomOf="@+id/registeranothervehicle"
             />
 
         <Button
-            android:id="@+id/question5"
+            android:id="@+id/application4"
             android:layout_width="260dp"
             android:layout_height="45dp"
-            android:text="pregunta 5"
+            android:text="Solicitud 4"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
             android:textStyle="bold"
+            android:textSize="15sp"
             app:cornerRadius="5sp"
+            android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/question4"/>
+            app:layout_constraintTop_toBottomOf="@+id/reportaproblem"
+            />
 
         <Button
-            android:id="@+id/question6"
+            android:id="@+id/application5"
             android:layout_width="260dp"
             android:layout_height="45dp"
-            android:text="pregunta 6"
+            android:text="Solicitud 5"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
             android:textStyle="bold"
+            android:textSize="15sp"
             app:cornerRadius="5sp"
+            android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/question5"/>
+            app:layout_constraintTop_toBottomOf="@+id/application4"
+            />
 
         <Button
-            android:id="@+id/question7"
+            android:id="@+id/application6"
             android:layout_width="260dp"
             android:layout_height="45dp"
-            android:text="Pregunta 7"
+            android:text="Solicitud 6"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
             android:textStyle="bold"
+            android:textSize="15sp"
             app:cornerRadius="5sp"
+            android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/question6"/>
+            app:layout_constraintTop_toBottomOf="@+id/application5"/>
 
         <Button
-            android:id="@+id/question8"
+            android:id="@+id/application7"
             android:layout_width="260dp"
             android:layout_height="45dp"
-            android:text="Pregunta 8"
+            android:text="Solicitud 7"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
             android:textStyle="bold"
+            android:textSize="15sp"
             app:cornerRadius="5sp"
+            android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/question7"/>
+            app:layout_constraintTop_toBottomOf="@+id/application6"/>
 
         <Button
-            android:id="@+id/question9"
+            android:id="@+id/application8"
             android:layout_width="260dp"
             android:layout_height="45dp"
-            android:text="Pregunta 9"
+            android:text="Solicitud 8"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
             android:textStyle="bold"
+            android:textSize="15sp"
             app:cornerRadius="5sp"
+            android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/question8"/>
+            app:layout_constraintTop_toBottomOf="@+id/application7"/>
+
+        <Button
+            android:id="@+id/application9"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:text="Solicitud 9"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/application8"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</FrameLayout>
 
+</FrameLayout>
