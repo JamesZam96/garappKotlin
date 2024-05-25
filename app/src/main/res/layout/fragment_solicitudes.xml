@@ -8,20 +8,24 @@
     android:background="#C1C1C1">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/baseline_arrow_back_ios_24">
-
-    </ImageView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
 
         <TextView
             android:id="@+id/requests"
@@ -39,7 +43,7 @@
         <Button
             android:id="@+id/updateinformation"
             android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="Actializar informacion"
             android:layout_marginTop="90dp"
             android:textStyle="bold"
@@ -54,7 +58,7 @@
         <Button
             android:id="@+id/registeranothervehicle"
             android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="Resgistrar otro vehiculo"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
@@ -69,7 +73,7 @@
         <Button
             android:id="@+id/reportaproblem"
             android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="Reportar un problema"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
@@ -85,7 +89,7 @@
         <Button
             android:id="@+id/application4"
             android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="Solicitud 4"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
@@ -101,7 +105,7 @@
         <Button
             android:id="@+id/application5"
             android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="Solicitud 5"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
@@ -117,7 +121,7 @@
         <Button
             android:id="@+id/application6"
             android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="Solicitud 6"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
@@ -132,7 +136,7 @@
         <Button
             android:id="@+id/application7"
             android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="Solicitud 7"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
@@ -147,7 +151,7 @@
         <Button
             android:id="@+id/application8"
             android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="Solicitud 8"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
@@ -162,7 +166,7 @@
         <Button
             android:id="@+id/application9"
             android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="Solicitud 9"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
