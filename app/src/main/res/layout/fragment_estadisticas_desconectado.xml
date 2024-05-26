@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Estadistica_conectado"
+    tools:context=".estadisticas_desconectado"
     android:background="#C1C1C1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,13 +30,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:textColor="@color/black"
             android:text="Estadisticas"
-            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="30dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/layout"
             app:layout_constraintStart_toStartOf="@+id/layout"
-            app:layout_constraintTop_toTopOf="@+id/layout" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <Button
             android:id="@+id/October1"
@@ -156,4 +157,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>
