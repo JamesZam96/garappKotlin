@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SolicitudesConectado"
+    android:background="#C1C1C1">
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/solicides"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <TextView
+           android:id="@+id/request"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:text="solicitudes"
+           android:textColor="@color/black"
+           android:textSize="35sp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="@id/solicides"
+           app:layout_constraintStart_toStartOf="@id/solicides"
+           app:layout_constraintTop_toTopOf="@id/solicides"
+           />
+       <Button
+           android:id="@+id/UpdateInformation"
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="100dp"
+           android:backgroundTint="#FA3D3B"
+           android:text="Actualizar informacion"
+           android:textColor="@color/white"
+           android:textSize="22sp"
+           android:textStyle="bold"
+           app:cornerRadius="5sp"
+           app:layout_constraintEnd_toEndOf="@id/solicides"
+           app:layout_constraintStart_toStartOf="@id/solicides"
+           app:layout_constraintTop_toTopOf="@id/request"
+           />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

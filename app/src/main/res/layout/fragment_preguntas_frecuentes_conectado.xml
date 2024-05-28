@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_two"
         android:layout_width="match_parent"
-        android:layout_height="666dp">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageView"
@@ -43,7 +43,7 @@
             android:id="@+id/question1"
             android:layout_width="260dp"
             android:layout_height="50dp"
-            android:layout_marginTop="88dp"
+            android:layout_marginTop="56dp"
             android:backgroundTint="#FA3D3B"
             android:text="Pregunta 1"
             android:textColor="@color/white"
@@ -51,7 +51,7 @@
             android:textStyle="bold"
             app:cornerRadius="5sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frequentquestions" />
 
@@ -60,12 +60,13 @@
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
-            android:text="Pregunta 2"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
+            android:text="Pregunta 2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="5sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question1" />
 
