@@ -1,6 +1,7 @@
 package com.example.garapp
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
@@ -11,6 +12,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.annotation.MainThread
 import androidx.camera.camera2.internal.annotation.CameraExecutor
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
@@ -99,6 +101,11 @@ class FragmentScanFrontDni : Fragment() {
             )
         }
         binding.takePhoto.setOnClickListener { takePhoto() }
+
+        binding.continueScanBackDni.setOnClickListener {
+            val intent = Intent(requireContext(), Home::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all{
