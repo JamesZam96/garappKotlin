@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1C1C1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Encabezado con icono de menú, título y switch -->
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/garapp_deliveryman"
+            app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+        <TextView
+            android:id="@+id/garapp_deliveryman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="GarApp Repartidor"
+            android:textColor="@color/colorUno"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/menu"
+            app:layout_constraintEnd_toStartOf="@+id/switch_view"
+            app:layout_constraintBottom_toBottomOf="@+id/menu" />
+
+        <ImageView
+            android:id="@+id/switch_view"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_switch"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/garapp_deliveryman"
+            app:layout_constraintStart_toEndOf="@+id/garapp_deliveryman" />
+
+
+        <androidx.camera.view.PreviewView
+
+            android:layout_width="370dp"
+            android:layout_height="232dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="@id/switch_view"
+            app:layout_constraintTop_toBottomOf="@id/garapp_deliveryman" />
+
+        <Button
+            android:id="@+id/tienda_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="Nombre de la tienda"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="108dp" />
+
+        <Button
+            android:id="@+id/arrived_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="Llegué a la tienda"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="650dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
