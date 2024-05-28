@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ganancias_conectado"
+    android:background="#C1C1C1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Profits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Ganacias"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/layout"
+            app:layout_constraintStart_toStartOf="@+id/layout"
+            app:layout_constraintTop_toTopOf="@+id/layout" />
+
+        <Button
+            android:id="@+id/October1"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FA3D3B"
+            android:text="1 Octubre"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Profits" />
+
+        <Button
+            android:id="@+id/October2"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="2 Octubre"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="5sp"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/October1"
+            />
+
+        <Button
+            android:id="@+id/October3"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="3 Octubre"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="5sp"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/October2"/>
+
+        <Button
+            android:id="@+id/October4"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="4 Octubre"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="5sp"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/October3"/>
+
+        <Button
+            android:id="@+id/October5"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="5 Octubre"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="5sp"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/October4"/>
+
+        <Button
+            android:id="@+id/October6"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="6 Octubre"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="5sp"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/October5"/>
+
+        <Button
+            android:id="@+id/October7"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="7 Octubre"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="5sp"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/October6"/>
+
+        <Button
+            android:id="@+id/October8"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="8 Octubre"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="5sp"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/October7"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".solicitudes"
+    android:background="#C1C1C1">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/requests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/layout"
+            app:layout_constraintStart_toStartOf="@id/layout"
+            app:layout_constraintTop_toTopOf="@id/layout"
+            android:text="Solicitudes" />
+
+        <Button
+            android:id="@+id/updateinformation"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="Actializar informacion"
+            android:layout_marginTop="90dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requests" />
+
+        <Button
+            android:id="@+id/registeranothervehicle"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="Resgistrar otro vehiculo"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateinformation" />
+
+        <Button
+            android:id="@+id/reportaproblem"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="Reportar un problema"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registeranothervehicle"
+            />
+
+        <Button
+            android:id="@+id/application4"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="Solicitud 4"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reportaproblem"
+            />
+
+        <Button
+            android:id="@+id/application5"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="Solicitud 5"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/application4"
+            />
+
+        <Button
+            android:id="@+id/application6"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="Solicitud 6"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/application5"/>
+
+        <Button
+            android:id="@+id/application7"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="Solicitud 7"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/application6"/>
+
+        <Button
+            android:id="@+id/application8"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="Solicitud 8"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/application7"/>
+
+        <Button
+            android:id="@+id/application9"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:text="Solicitud 9"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#FA3D3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/application8"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
