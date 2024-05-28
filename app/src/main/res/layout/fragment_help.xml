@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ayuda_desconectado"
+    tools:context=".FragmentHelp"
     android:background="@color/colorTres">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ayuda"
@@ -34,7 +35,6 @@
             android:text="AYUDA"
             android:textColor="@color/black"
             android:textSize="30dp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/ayuda"
             app:layout_constraintStart_toStartOf="@+id/ayuda"
             app:layout_constraintTop_toTopOf="@+id/ayuda">
@@ -86,7 +86,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="160dp"
                 android:backgroundTint="#FA3D3B"
-                android:text="Envia una solicitud"
+                android:text="Preguntas frecuentes"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:textStyle="bold">

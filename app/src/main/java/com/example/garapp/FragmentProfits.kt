@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ganancias_conectado.newInstance] factory method to
+ * Use the [FragmentProfits.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ganancias_conectado : Fragment() {
+class FragmentProfits : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +34,7 @@ class ganancias_conectado : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ganancias_conectado, container, false)
+        return inflater.inflate(R.layout.fragment_profits, container, false)
     }
 
     companion object {
@@ -44,12 +44,12 @@ class ganancias_conectado : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment ganancias_conectado.
+         * @return A new instance of fragment FragmentProfits.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ganancias_conectado().apply {
+            FragmentProfits().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

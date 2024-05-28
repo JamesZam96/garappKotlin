@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ganancias_conectado"
+    tools:context=".FragmentStatistics"
     android:background="#C1C1C1">
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <ImageView
             android:id="@+id/imageView"
@@ -28,14 +26,13 @@
         </ImageView>
 
         <TextView
-            android:id="@+id/Profits"
+            android:id="@+id/statistics"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Ganacias"
             android:textColor="@color/black"
+            android:text="Estadisticas"
             android:textSize="30dp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/layout"
             app:layout_constraintStart_toStartOf="@+id/layout"
             app:layout_constraintTop_toTopOf="@+id/layout" />
@@ -44,16 +41,16 @@
             android:id="@+id/October1"
             android:layout_width="260dp"
             android:layout_height="50dp"
-            android:backgroundTint="#FA3D3B"
-            android:text="1 Octubre"
             android:layout_marginTop="120dp"
+            android:text="1 Octubre"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
+            android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Profits" />
+            app:layout_constraintTop_toBottomOf="@+id/statistics" />
 
         <Button
             android:id="@+id/October2"
@@ -82,7 +79,7 @@
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/October2"/>
+            app:layout_constraintTop_toBottomOf="@+id/October2" />
 
         <Button
             android:id="@+id/October4"
@@ -96,7 +93,7 @@
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/October3"/>
+            app:layout_constraintTop_toBottomOf="@+id/October3"  />
 
         <Button
             android:id="@+id/October5"
@@ -138,7 +135,8 @@
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/October6"/>
+            app:layout_constraintTop_toBottomOf="@+id/October6"
+            />
 
         <Button
             android:id="@+id/October8"
@@ -152,7 +150,9 @@
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/October7"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toBottomOf="@+id/October7"
+            />
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
