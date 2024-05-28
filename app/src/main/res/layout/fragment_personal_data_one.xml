@@ -9,22 +9,186 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_four"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/layout_four">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/create_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:text="Crea tu cuenta"
             android:textColor="@color/black"
             android:textSize="35sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="@id/layout_two"
-            app:layout_constraintStart_toStartOf="@id/layout_two"
-            app:layout_constraintEnd_toEndOf="@id/layout_two"
-            android:layout_marginTop="30dp"/>
+            app:layout_constraintEnd_toEndOf="@id/layout_four"
+            app:layout_constraintStart_toStartOf="@id/layout_four"
+            app:layout_constraintTop_toTopOf="@id/layout_four" />
+
+        <TextView
+            android:id="@+id/personal_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Datos personales"
+            android:textColor="@color/colorUno"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/layout_four"
+            app:layout_constraintStart_toStartOf="@id/layout_four"
+            app:layout_constraintTop_toBottomOf="@id/create_account" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Nombres"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#000000"
+            app:cursorColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/layout_four"
+            app:layout_constraintStart_toStartOf="@id/layout_four"
+            app:layout_constraintTop_toBottomOf="@id/personal_data">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="#3D99C3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Apellidos"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#000000"
+            app:cursorColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/layout_four"
+            app:layout_constraintStart_toStartOf="@id/layout_four"
+            app:layout_constraintTop_toBottomOf="@id/name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="#3D99C3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <GridLayout
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:columnCount="3"
+            android:rowCount="1"
+            app:layout_constraintEnd_toEndOf="@id/layout_four"
+            app:layout_constraintStart_toStartOf="@id/layout_four"
+            app:layout_constraintTop_toBottomOf="@id/lastname"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:gravity="center"
+                android:text="Hombre"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:buttonTint="@color/black"
+                android:gravity="center"
+                android:text="Mujer"
+                android:textColor="@color/black" />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:buttonTint="@color/black"
+                android:gravity="center"
+                android:text="Otro"
+                android:textColor="@color/black" />
+
+        </GridLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/date_of_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Fecha de nacimiento"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#000000"
+            app:cursorColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/layout_four"
+            app:layout_constraintStart_toStartOf="@id/layout_four"
+            app:layout_constraintTop_toBottomOf="@id/genre">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textColorHighlight="#3D99C3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/vehicle_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Medio de transporte"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#000000"
+            app:cursorColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/layout_four"
+            app:layout_constraintStart_toStartOf="@id/layout_four"
+            app:layout_constraintTop_toBottomOf="@id/date_of_birth">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textColorHighlight="#3D99C3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/continue_personal_data"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Continuar"
+            app:layout_constraintTop_toBottomOf="@id/vehicle_type"
+            app:layout_constraintStart_toStartOf="@id/layout_four"
+            app:layout_constraintEnd_toEndOf="@id/layout_four"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#FA3D3B"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            app:icon="@drawable/baseline_arrow_forward_ios_24"
+            app:iconTint="#FFFFFF"
+            app:iconSize="20dp"
+            app:iconGravity="end"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

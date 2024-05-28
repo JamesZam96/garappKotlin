@@ -62,6 +62,13 @@ class FragmentPersonalDataOne : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.continuePersonalData.setOnClickListener {
+            val fragmentSelectTypeDocument = FragmentSelectTypeDocument()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_main_container,fragmentSelectTypeDocument)
+                .addToBackStack(null)
+                .commit()
+        }
     }
 
     override fun onDestroyView() {

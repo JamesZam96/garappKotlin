@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.garapp.databinding.FragmentVerificationCodeBinding
+import com.example.garapp.databinding.FragmentSelectTypeDocumentBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -14,14 +14,14 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [FragmentVerificationCode.newInstance] factory method to
+ * Use the [FragmentSelectTypeDocument.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FragmentVerificationCode : Fragment() {
+class FragmentSelectTypeDocument : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private var _binding : FragmentVerificationCodeBinding? = null
+    private var _binding : FragmentSelectTypeDocumentBinding? = null
     private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +35,7 @@ class FragmentVerificationCode : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentVerificationCodeBinding.inflate(inflater,container,false)
+        _binding = FragmentSelectTypeDocumentBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
         return binding.root
     }
@@ -47,12 +47,12 @@ class FragmentVerificationCode : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment FragmentVerificationCode.
+         * @return A new instance of fragment FragmentSelectTypeDocument.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            FragmentVerificationCode().apply {
+            FragmentSelectTypeDocument().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
@@ -62,10 +62,10 @@ class FragmentVerificationCode : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.continueVerificationCode.setOnClickListener {
-            val fragmentConfirmPersonalData = FragmentConfirmPersonalData()
+        binding.citizenshipCard.setOnClickListener {
+            val fragmentScanDni = FragmentScanFrontDni()
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_main_container,fragmentConfirmPersonalData)
+                .replace(R.id.fragment_main_container,fragmentScanDni)
                 .addToBackStack(null)
                 .commit()
         }
