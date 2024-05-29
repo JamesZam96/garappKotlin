@@ -2,6 +2,7 @@ package com.example.garapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -37,6 +38,12 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
         navView.setNavigationItemSelectedListener(this)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_toolbar, menu)
+
+        return true
     }
 
     override fun onBackPressed() {

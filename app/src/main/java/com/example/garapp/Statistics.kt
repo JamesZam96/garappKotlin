@@ -13,9 +13,18 @@ class Statistics : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityStatisticsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbarStatistics)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val fragmentStatistics = FragmentStatistics()
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_statistics_container,fragmentStatistics)
             .commit()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
