@@ -1,5 +1,6 @@
 package com.example.garapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -69,6 +70,11 @@ class FragmentLogin : Fragment() {
                 .replace(R.id.fragment_main_container,fragmentCreateAccount)
                 .addToBackStack(null)
                 .commit()
+        }
+
+        binding.loginButton.setOnClickListener {
+            val intent = Intent(requireActivity(),Home::class.java)
+            startActivity(intent)
         }
     }
 

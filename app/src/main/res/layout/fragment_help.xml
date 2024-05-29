@@ -13,11 +13,11 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/Frequent_questions"
+            android:id="@+id/help_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Preguntas frecuentes"
+            android:text="Ayuda"
             android:textColor="@color/black"
             android:textSize="35sp"
             android:textStyle="bold"
@@ -33,7 +33,7 @@
             android:src="@android:drawable/ic_dialog_info"
             app:layout_constraintEnd_toEndOf="@id/layout_two"
             app:layout_constraintStart_toStartOf="@id/layout_two"
-            app:layout_constraintTop_toBottomOf="@id/Frequent_questions"
+            app:layout_constraintTop_toBottomOf="@id/help_title"
             />
 
 
