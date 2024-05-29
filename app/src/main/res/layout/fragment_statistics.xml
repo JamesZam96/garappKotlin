@@ -12,30 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="25dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="40dp"
-            android:src="@drawable/baseline_arrow_back_ios_24"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.060"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
 
-        </ImageView>
 
-        <TextView
-            android:id="@+id/statistics"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:textColor="@color/black"
-            android:text="Estadisticas"
-            android:textSize="30dp"
-            app:layout_constraintEnd_toEndOf="@+id/layout"
-            app:layout_constraintStart_toStartOf="@+id/layout"
-            app:layout_constraintTop_toTopOf="@+id/layout" />
+
+
+
 
         <Button
             android:id="@+id/October1"
