@@ -12,8 +12,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.annotation.MainThread
-import androidx.camera.camera2.internal.annotation.CameraExecutor
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
@@ -21,13 +19,13 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.garapp.databinding.FragmentScanBackDniBinding
 import com.example.garapp.databinding.FragmentScanFrontDniBinding
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
-
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,19 +34,18 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [FragmentScanFrontDni.newInstance] factory method to
+ * Use the [FragmentScanBackDni.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FragmentScanFrontDni : Fragment() {
+class FragmentScanBackDni : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
-    private var _binding : FragmentScanFrontDniBinding? = null
+    private var _binding : FragmentScanBackDniBinding? = null
     private val binding get() = _binding!!
     private lateinit var cameraExecutor: ExecutorService
     private var imageCapture : ImageCapture? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -61,7 +58,7 @@ class FragmentScanFrontDni : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentScanFrontDniBinding.inflate(inflater, container, false)
+        _binding = FragmentScanBackDniBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
         return binding.root
     }
@@ -73,12 +70,12 @@ class FragmentScanFrontDni : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment FragmentScanFrontDni.
+         * @return A new instance of fragment FragmentScanBackDni.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            FragmentScanFrontDni().apply {
+            FragmentScanBackDni().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
@@ -97,15 +94,17 @@ class FragmentScanFrontDni : Fragment() {
             startCamera()
         }else{
             ActivityCompat.requestPermissions(
-                requireActivity(), REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS
+                requireActivity(),
+                REQUIRED_PERMISSIONS,
+                REQUEST_CODE_PERMISSIONS
             )
         }
-        binding.takePhoto.setOnClickListener { takePhoto() }
+        binding.takePhotoBackDni.setOnClickListener { takePhoto() }
 
-        binding.continueScanBackDni.setOnClickListener {
-            val fragmentScanBackDni = FragmentScanBackDni()
+        binding.continueDrivingLicense.setOnClickListener {
+            val fragmentDrivingLicense = FragmentDrivingLicense()
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_main_container,fragmentScanBackDni)
+                .replace(R.id.fragment_main_container,fragmentDrivingLicense)
                 .addToBackStack(null)
                 .commit()
         }
@@ -125,7 +124,7 @@ class FragmentScanFrontDni : Fragment() {
                 .setTargetResolution(Size(1280,720))
                 .build()
                 .also{
-                    it.setSurfaceProvider(binding.cameraFrontDni.surfaceProvider)
+                    it.setSurfaceProvider(binding.cameraBackDni.surfaceProvider)
                 }
 
             imageCapture = ImageCapture.Builder()
@@ -190,4 +189,5 @@ class FragmentScanFrontDni : Fragment() {
         _binding = null
         cameraExecutor.shutdown()
     }
+
 }

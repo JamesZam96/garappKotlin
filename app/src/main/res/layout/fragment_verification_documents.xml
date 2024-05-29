@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentVerificationDocuments"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C1C1C1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_verification_documents">
+
+        <TextView
+            android:id="@+id/created_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Cuenta creada"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/layout_verification_documents"
+            app:layout_constraintStart_toStartOf="@id/layout_verification_documents"
+            app:layout_constraintTop_toTopOf="@id/layout_verification_documents" />
+
+        <TextView
+            android:id="@+id/verification_documents_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="Haz subido los documentos requeridos con exito. Ahora solo resta esperar la verificación..."
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/layout_verification_documents"
+            app:layout_constraintStart_toStartOf="@id/layout_verification_documents"
+            app:layout_constraintTop_toBottomOf="@id/created_account" />
+
+        <Button
+            android:id="@+id/continue_profile_photo"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Continuar"
+            app:layout_constraintTop_toBottomOf="@id/verification_documents_message"
+            app:layout_constraintStart_toStartOf="@id/layout_verification_documents"
+            app:layout_constraintEnd_toEndOf="@id/layout_verification_documents"
+            android:layout_marginTop="180dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#FA3D3B"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            app:icon="@drawable/baseline_arrow_forward_ios_24"
+            app:iconTint="#FFFFFF"
+            app:iconSize="20dp"
+            app:iconGravity="end"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

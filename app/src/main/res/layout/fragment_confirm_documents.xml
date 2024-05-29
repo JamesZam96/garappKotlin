@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentConfirmDocuments"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C1C1C1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_confirm_documents">
+
+
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Crea tu cuenta"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/layout_confirm_documents"
+            app:layout_constraintStart_toStartOf="@id/layout_confirm_documents"
+            app:layout_constraintTop_toTopOf="@id/layout_confirm_documents" />
+
+        <TextView
+            android:id="@+id/registered_documents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Documentos registrados"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@id/layout_confirm_documents"
+            app:layout_constraintStart_toStartOf="@id/layout_confirm_documents"
+            app:layout_constraintTop_toBottomOf="@id/create_account" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Documento de identificación"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/layout_confirm_documents"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toBottomOf="@id/registered_documents"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:id="@+id/dni"
+            android:buttonTint="#009688"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Licencia de conducción"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/layout_confirm_documents"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toBottomOf="@id/dni"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:id="@+id/driving_license"
+            android:buttonTint="#009688"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Licencia de tránsito"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/layout_confirm_documents"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toBottomOf="@id/driving_license"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:id="@+id/traffic_license"
+            android:buttonTint="#009688"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seguro Obligatorio (SOAT)"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/layout_confirm_documents"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toBottomOf="@id/traffic_license"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:id="@+id/obligatory_insurance"
+            android:buttonTint="#009688"/>
+
+        <Button
+            android:id="@+id/continue_verify_documents"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Continuar"
+            app:layout_constraintTop_toBottomOf="@id/obligatory_insurance"
+            app:layout_constraintStart_toStartOf="@id/layout_confirm_documents"
+            app:layout_constraintEnd_toEndOf="@id/layout_confirm_documents"
+            android:layout_marginTop="90dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#FA3D3B"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            app:icon="@drawable/baseline_arrow_forward_ios_24"
+            app:iconTint="#FFFFFF"
+            app:iconSize="20dp"
+            app:iconGravity="end"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
