@@ -12,39 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="25dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="40dp"
-            android:src="@drawable/baseline_arrow_back_ios_24"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.060"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
 
-        </ImageView>
 
-        <TextView
-            android:id="@+id/statistics"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:textColor="@color/black"
-            android:text="Estadisticas"
-            android:textSize="30dp"
-            app:layout_constraintEnd_toEndOf="@+id/layout"
-            app:layout_constraintStart_toStartOf="@+id/layout"
-            app:layout_constraintTop_toTopOf="@+id/layout" />
+
+
+
 
         <Button
             android:id="@+id/October1"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="70dp"
             android:text="1 Octubre"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -54,11 +35,12 @@
 
         <Button
             android:id="@+id/October2"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
+            android:layout_marginTop="20dp"
             android:text="2 Octubre"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -69,11 +51,12 @@
 
         <Button
             android:id="@+id/October3"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="3 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -83,11 +66,12 @@
 
         <Button
             android:id="@+id/October4"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="4 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -97,11 +81,12 @@
 
         <Button
             android:id="@+id/October5"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="5 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -111,11 +96,12 @@
 
         <Button
             android:id="@+id/October6"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="6 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -125,11 +111,12 @@
 
         <Button
             android:id="@+id/October7"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="7 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -140,11 +127,12 @@
 
         <Button
             android:id="@+id/October8"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="8 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"

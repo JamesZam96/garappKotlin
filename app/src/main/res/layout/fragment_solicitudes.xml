@@ -42,12 +42,12 @@
 
         <Button
             android:id="@+id/updateinformation"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Actializar informacion"
             android:layout_marginTop="90dp"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:cornerRadius="5sp"
             android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
@@ -57,12 +57,12 @@
 
         <Button
             android:id="@+id/registeranothervehicle"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Resgistrar otro vehiculo"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:cornerRadius="5sp"
             android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
@@ -72,12 +72,12 @@
 
         <Button
             android:id="@+id/reportaproblem"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Reportar un problema"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:cornerRadius="5sp"
             android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
@@ -88,12 +88,12 @@
 
         <Button
             android:id="@+id/application4"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Solicitud 4"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:cornerRadius="5sp"
             android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
@@ -104,12 +104,12 @@
 
         <Button
             android:id="@+id/application5"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Solicitud 5"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:cornerRadius="5sp"
             android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
@@ -120,12 +120,12 @@
 
         <Button
             android:id="@+id/application6"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Solicitud 6"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:cornerRadius="5sp"
             android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
@@ -135,12 +135,12 @@
 
         <Button
             android:id="@+id/application7"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Solicitud 7"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:cornerRadius="5sp"
             android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
@@ -150,12 +150,12 @@
 
         <Button
             android:id="@+id/application8"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Solicitud 8"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:cornerRadius="5sp"
             android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"
@@ -165,12 +165,12 @@
 
         <Button
             android:id="@+id/application9"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="Solicitud 9"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="20sp"
             app:cornerRadius="5sp"
             android:textColor="@color/white"
             android:backgroundTint="#FA3D3B"

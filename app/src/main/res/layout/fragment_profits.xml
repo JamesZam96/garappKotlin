@@ -41,13 +41,13 @@
 
         <Button
             android:id="@+id/October1"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:backgroundTint="#FA3D3B"
             android:text="1 Octubre"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="80dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -56,11 +56,12 @@
 
         <Button
             android:id="@+id/October2"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="2 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -71,11 +72,12 @@
 
         <Button
             android:id="@+id/October3"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="3 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -85,11 +87,12 @@
 
         <Button
             android:id="@+id/October4"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="4 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -99,11 +102,12 @@
 
         <Button
             android:id="@+id/October5"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="5 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -113,11 +117,12 @@
 
         <Button
             android:id="@+id/October6"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="6 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -127,11 +132,12 @@
 
         <Button
             android:id="@+id/October7"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="7 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
@@ -141,11 +147,12 @@
 
         <Button
             android:id="@+id/October8"
-            android:layout_width="260dp"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:text="8 Octubre"
+            android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="5sp"
             android:backgroundTint="#FA3D3B"
