@@ -2,9 +2,9 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/connect_switch"
-        android:title="Switch"
+        android:id="@+id/switch_item"
+        android:title=""
         android:actionLayout="@layout/switch_layout"
-        app:showAsAction="ifRoom"
-        app:actionViewClass="android.widget.Switch"/>
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SwitchCompat" />
 </menu>

@@ -13,9 +13,18 @@ class Help : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHelpBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbarHelp)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val fragmentHelp = FragmentHelp()
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_help_container,fragmentHelp)
             .commit()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

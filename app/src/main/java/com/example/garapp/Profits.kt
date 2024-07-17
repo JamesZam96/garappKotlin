@@ -13,9 +13,19 @@ class Profits : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProfitsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbarProfits)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
         val fragmentProfits = FragmentProfits()
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_profits_container,fragmentProfits)
             .commit()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

@@ -5,13 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
+    tools:context=".GarapperConnected"
     android:background="@color/colorTres">
-    
+
     <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/drawer_layout"
+        android:id="@+id/drawer_layout_garapper_connected"
         >
 
         <LinearLayout
@@ -19,21 +19,27 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
+
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbar_garapper_connected"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:titleTextColor="@color/black"
-                app:menu="@menu/menu_toolbar"/>
-
+                app:menu="@menu/menu_toolbar"
+                />
 
             <FrameLayout
                 android:id="@+id/nav_host_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorTres"/>
+                android:background="@color/colorTres">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hola"/>
+            </FrameLayout>
 
         </LinearLayout>
 
