@@ -1,12 +1,20 @@
 package com.example.garapp
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.garapp.databinding.FragmentLoginBinding
+import com.example.garapp.models.LoginRequest
+import com.example.garapp.models.LoginResponse
+import com.example.garapp.network.RetrofitClient
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,7 +30,7 @@ class FragmentLogin : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private var _binding : FragmentLoginBinding? = null
+    private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +45,7 @@ class FragmentLogin : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentLoginBinding.inflate(inflater,container,false)
+        _binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -63,23 +71,53 @@ class FragmentLogin : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.registrationButton.setOnClickListener{
+        binding.registrationButton.setOnClickListener {
             val fragmentCreateAccount = CreateAccount()
 
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_main_container,fragmentCreateAccount)
+                .replace(R.id.fragment_main_container, fragmentCreateAccount)
                 .addToBackStack(null)
                 .commit()
         }
 
         binding.loginButton.setOnClickListener {
-            val intent = Intent(requireActivity(),Home::class.java)
-            startActivity(intent)
+            val email = binding.loginEmail.text.toString()
+            val password = binding.loginPassword.text.toString()
+            RetrofitClient.apiService.login(LoginRequest(email, password))
+                .enqueue(object : Callback<LoginResponse> {
+                    override fun onResponse(
+                        call: Call<LoginResponse>,
+                        response: Response<LoginResponse>
+                    ) {
+                        if (response.isSuccessful) {
+                            // Guarda el token en SharedPreferences
+                            val token = response.body()?.token
+                            val sharedPreferences =
+                                requireContext().getSharedPreferences("prefs", Context.MODE_PRIVATE)
+                            sharedPreferences.edit().putString("token", token).apply()
+
+                            // Navega a la actividad Home
+                            val intent = Intent(requireContext(), Home::class.java)
+                            startActivity(intent)
+                            activity?.finish()
+                        } else {
+                            // Maneja el error
+                            Toast.makeText(requireContext(), "Login failed", Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                    }
+
+                    override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+                        Toast.makeText(requireContext(), "Network error", Toast.LENGTH_SHORT).show()
+                    }
+                })
+
         }
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 }
+
+

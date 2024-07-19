@@ -12,44 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/help_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Ayuda"
-            android:textColor="@color/black"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@id/layout_two"
-            app:layout_constraintStart_toStartOf="@id/layout_two"
-            app:layout_constraintTop_toTopOf="@id/layout_two" />
-
-        <ImageView
-            android:id="@+id/exclamacion"
-            android:layout_width="122dp"
-            android:layout_height="122dp"
-            android:layout_marginTop="50dp"
-            android:src="@android:drawable/ic_dialog_info"
-            app:layout_constraintEnd_toEndOf="@id/layout_two"
-            app:layout_constraintStart_toStartOf="@id/layout_two"
-            app:layout_constraintTop_toBottomOf="@id/help_title"
-            />
-
-
         <Button
             android:id="@+id/button1"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:backgroundTint="#FA3D3B"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="80dp"
             android:text="Chatea con un asesor"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/layout_two"
             app:layout_constraintStart_toStartOf="@id/layout_two"
-            app:layout_constraintTop_toBottomOf="@id/exclamacion"
+            app:layout_constraintTop_toTopOf="parent"
             />
 
         <Button

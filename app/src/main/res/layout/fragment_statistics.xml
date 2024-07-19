@@ -12,17 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
-
-
-
-
         <Button
             android:id="@+id/October1"
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="80dp"
             android:text="1 Octubre"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -31,7 +25,7 @@
             android:backgroundTint="#FA3D3B"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/statistics" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/October2"

@@ -1,6 +1,7 @@
 package com.example.garapp
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -8,6 +9,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.CompoundButton
 import android.widget.Switch
+import android.widget.Toast
 import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -21,7 +23,11 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import com.example.garapp.databinding.ActivityHomeBinding
+import com.example.garapp.network.RetrofitClient
 import com.google.android.material.navigation.NavigationView
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -46,6 +52,14 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
         navView.setNavigationItemSelectedListener(this)
+
+        // Mostrar HomeFragment al inicio
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_main_container, HomeFragment())
+                .commit()
+        }
+
     }
 
 
@@ -58,9 +72,20 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         switchItem.setActionView(R.layout.switch_layout)
         val switchView = switchItem.actionView!!.findViewById<SwitchCompat>(R.id.switch_in_toolbar)
         switchView?.setOnCheckedChangeListener { buttonView, isChecked ->
+            val sharedPreferences = getSharedPreferences("prefs", Context.MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("switch_state", isChecked)
+            editor.apply()
             if (isChecked) {
-                val intent = Intent(this, GarapperConnected::class.java)
-                startActivity(intent)
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_main_container, ConnectedFragment())
+                    .commit()
+                //val intent = Intent(this, GarapperConnected::class.java)
+                //startActivity(intent)
+            }else{
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_main_container, HomeFragment())
+                    .commit()
             }
         }
         return true
@@ -96,6 +121,28 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
             R.id.help -> {
                 val intent = Intent(this, Help::class.java)
                 startActivity(intent)
+            }
+            R.id.logout->{
+                RetrofitClient.apiService.logout().enqueue(object :Callback<Void> {
+                    override fun onResponse(call: Call<Void>, response: Response<Void>) {
+                        if(response.isSuccessful){
+                            val sharedPreferences = getSharedPreferences("prefs", Context.MODE_PRIVATE)
+                            sharedPreferences.edit().remove("token").apply()
+
+                            val intent = Intent(this@Home, MainActivity::class.java)
+                            startActivity(intent)
+                            finish()
+                        }else{
+                            Toast.makeText(this@Home, "Logout failed", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+
+                    override fun onFailure(call: Call<Void>, t: Throwable) {
+                        // Maneja el error de red
+                        Toast.makeText(this@Home, "Network error", Toast.LENGTH_SHORT).show()
+                    }
+                })
+
             }
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)

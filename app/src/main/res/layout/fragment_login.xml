@@ -40,7 +40,7 @@
             app:layout_constraintTop_toBottomOf="@id/title_login" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/login_email"
+            android:id="@+id/login_email_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
@@ -59,12 +59,12 @@
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black"
                 android:textColorHighlight="#3D99C3"
-
+                android:id="@+id/login_email"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/login_password"
+            android:id="@+id/login_password_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
@@ -77,13 +77,12 @@
             app:hintTextColor="@color/black"
             app:layout_constraintEnd_toEndOf="@id/layout_one"
             app:layout_constraintStart_toStartOf="@id/layout_one"
-            app:layout_constraintTop_toBottomOf="@id/login_email"
+            app:layout_constraintTop_toBottomOf="@id/login_email_layout"
             app:startIconTint="@color/black"
-
             >
 
-
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_password"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:inputType="textPassword"
@@ -104,7 +103,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/layout_one"
             app:layout_constraintStart_toStartOf="@id/layout_one"
-            app:layout_constraintTop_toBottomOf="@id/login_password" />
+            app:layout_constraintTop_toBottomOf="@id/login_password_layout" />
 
         <Button
             android:id="@+id/registration_button"
